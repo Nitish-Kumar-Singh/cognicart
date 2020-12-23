@@ -1,5 +1,5 @@
 html {
-  font-size: 80%;
+  font-size: 62.5%;
 font-family:Georgia, 'Times New Roman', Times, serif;
   box-sizing: border-box;
 }
@@ -39,7 +39,7 @@ button {
 .brand a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 .header-links a {
@@ -48,6 +48,7 @@ button {
   margin: 0.5rem;
   font-size: 20px;
   font-weight: bolder;
+  margin-left: 20px;
 }
 .header-links a:hover {
   color: #ff8000;

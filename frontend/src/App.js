@@ -35,11 +35,13 @@ function App() {
           
             <Link to="/cart">Cart</Link>
             
-            {userInfo.isAdmin ? (
-              <Link to="/products">Add Products</Link>
-            ) : (
-              <div></div>
-            )}
+           {userInfo && userInfo.email==="nitishsinghrajput11291@gmail.com"?
+              <Link to="/products">Add Products</Link>:
+              <Link to="/">Latest</Link>
+           }
+           
+            
+           
             {userInfo ? (
               <Link to="/profile">{userInfo.name}</Link>
             ) : (
