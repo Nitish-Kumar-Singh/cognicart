@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { register } from "../actions/userActions";
-import { userRegisterReducer } from "../reducers/userReducers";
+
 
 function RegisterScreen(props) {
   const [name, setName] = useState("");
@@ -34,12 +34,13 @@ function RegisterScreen(props) {
             <h1>Create New Account</h1>
           </li>
           <li>
-            {loading && <div>LOading....</div>}
-            {error && <div>{error}</div>}
+            {loading && <div className="error">LOading....</div>}
+            {error && <div className="error">Invalid Credentials</div>}
           </li>
           <li>
             <label htmlFor="name">Name</label>
             <input
+            required
               type="name"
               name="name"
               id="name"
@@ -49,6 +50,7 @@ function RegisterScreen(props) {
           <li>
             <label htmlFor="email">Email</label>
             <input
+              required
               type="email"
               name="email"
               id="email"
@@ -58,6 +60,7 @@ function RegisterScreen(props) {
           <li>
             <label htmlFor="password"> Password</label>
             <input
+              required
               type="password"
               id="password"
               name="password"
@@ -67,6 +70,7 @@ function RegisterScreen(props) {
           <li>
             <label htmlFor="rePassword">RE-Enter Password</label>
             <input
+              required
               type="rePassword"
               name="rePassword"
               id="rePassword"

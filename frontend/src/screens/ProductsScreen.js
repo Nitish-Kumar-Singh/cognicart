@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+
 import { deleteProduct, listProducts, saveProduct } from "../actions/productActions";
-import { signin } from "../actions/userActions";
-import { userSigninReducer } from "../reducers/userReducers";
+
 
 function ProductsScreen(props) {
   const [modalVisible, setModalVisible] = useState(false);

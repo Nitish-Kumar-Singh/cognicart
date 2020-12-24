@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart, removeFromCart } from "../actions/cartActions";
 import { Link } from "react-router-dom";
-import { productDetailsReducer } from "../reducers/productReducers";
+
 
 function CartScreen(props) {
   const cart = useSelector((state) => state.cart);

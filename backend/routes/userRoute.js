@@ -17,7 +17,7 @@ router.post("/signin", async (req, res) => {
       token: getToken(signinUser),
     });
   } else {
-    res.status(401).send({ msg: "Invalid Email or Password" });
+    res.status(400).send({ msg: "Invalid Email or Password" });
   }
 });
 router.post("/register", async (req, res) => {
@@ -43,7 +43,7 @@ router.post("/register", async (req, res) => {
 router.get("/createadmin", async (req, res) => {
   try {
     const user = new User({
-      name: "nitish",
+      name: "Nitish",
       email: "nitishsinghrajput11291@gmail.com",
       password: "1234",
       isAdmin: true,

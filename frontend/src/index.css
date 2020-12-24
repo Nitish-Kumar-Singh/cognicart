@@ -1,6 +1,6 @@
 html {
   font-size: 62.5%;
-font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   box-sizing: border-box;
 }
 body {
@@ -20,9 +20,9 @@ button {
 .grid-container {
   display: grid;
   grid-template-areas:
-    "header"
-    "main"
-    "footer";
+    'header'
+    'main'
+    'footer';
   grid-template-columns: 1fr;
   grid-template-rows: 5rem 1fr 5rem;
   height: 100%;
@@ -195,24 +195,24 @@ a:hover {
   cursor: pointer;
   border-radius: 0.5rem;
 }
-.qty{
+.qty {
   margin-top: 25px;
   margin-bottom: 20px;
   margin-left: 10px;
-  padding: .5rem;
+  padding: 0.5rem;
   border: 0.1rem #808080 solid;
   cursor: pointer;
   border-radius: 0.5rem;
 }
-.qtyPlaceOrder{
+.qtyPlaceOrder {
   margin-top: 10px;
   font-weight: bolder;
 }
-.cart-button{
+.cart-button {
   margin-top: 25px;
   margin-bottom: 20px;
   margin-left: 10px;
-  padding: .3rem;
+  padding: 0.3rem;
   border: 0.1rem #808080 solid;
   cursor: pointer;
   border-radius: 0.5rem;
@@ -272,10 +272,9 @@ a:hover {
   flex: 1 1;
 }
 .cart-name {
-  
   margin-bottom: 50px;
   margin-left: 20px;
-  
+
   flex: 8 1;
 }
 .cart-price {
@@ -311,83 +310,88 @@ input {
   border-radius: 0.5rem;
 }
 /*=====Products==========*/
-.product-header{
+.product-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
-.content-margined{
+.content-margined {
   padding: 1rem;
- margin:1 rem; 
+  margin: 1 rem;
 }
-.table{
-  width:100%
+.table {
+  width: 100%;
 }
-th{
+th {
   text-align: left;
 }
-tbody>tr:nth-child(odd){
+tbody > tr:nth-child(odd) {
   background-color: #f0f0f0;
 }
 
 /*==========CHECKOUT WIZARD====================*/
 
-.checkout-steps{
+.checkout-steps {
   display: flex;
   justify-content: space-between;
   width: 40rem;
-  margin:1rem auto;
+  margin: 1rem auto;
 }
-.checkout-steps >div{
-  border-top:.3 rem #c0c0c0 solid;
-  color:#c0c0c0;
-  flex:1 1;
-  padding-top: 1 rem ;
+.checkout-steps > div {
+  border-top: 0.3 rem #c0c0c0 solid;
+  color: #c0c0c0;
+  flex: 1 1;
+  padding-top: 1 rem;
 }
-.checkout-steps > div.active{
-  border-top:.3rem #f08000 solid;
-  color:#f08000;
-
+.checkout-steps > div.active {
+  border-top: 0.3rem #f08000 solid;
+  color: #f08000;
 }
 /*----------placeOrder-------------*/
-.placeorder{
+.placeorder {
   display: flex;
   flex-grow: wrap;
   padding: 1rem;
   justify-content: space-between;
 }
-.placeorder-info{
-  flex:3 1 60rem;
+.placeorder-info {
+  flex: 3 1 60rem;
 }
-.placeorder-action{
+.placeorder-action {
   flex: 1 1 20rem;
-  border: .1rem #c0c0c0 solid;
-  border-radius: .5rem;
+  border: 0.1rem #c0c0c0 solid;
+  border-radius: 0.5rem;
   background-color: #fcfcfc;
   padding: 1rem;
 }
-.placeorder-info >div{
-  border: .1rem #c0c0c0 solid;
-  border-radius: .5rem;
+.placeorder-info > div {
+  border: 0.1rem #c0c0c0 solid;
+  border-radius: 0.5rem;
   background-color: #fcfcfc;
   padding: 1rem;
-  margin:1rem;
+  margin: 1rem;
 }
-.placeorder-info > div:first-child{
+.placeorder-info > div:first-child {
   margin-top: 0;
 }
-.placeorder-action >ul{
+.placeorder-action > ul {
   padding: 0;
- list-style-type: none;
+  list-style-type: none;
 }
-.placeorder-action>ul>li{
+.placeorder-action > ul > li {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1 rem;
   font-size: 1.5rem;
 }
-.placeorder-action >ul>li:last-child{
+.placeorder-action > ul > li:last-child {
   font-size: 2rem;
   font-weight: bold;
-  color:#f08000
+  color: #f08000;
+}
+/*========================Error=======================*/
+
+.error {
+  color: red;
+  font-size: 12px;
 }

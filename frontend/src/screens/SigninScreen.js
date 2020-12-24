@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { signin } from "../actions/userActions";
-import { userSigninReducer } from "../reducers/userReducers";
+
 
 function SigninScreen(props) {
   const [email, setEmail] = useState("");
@@ -30,12 +30,13 @@ const redirect =props.location.search?props.location.search.split("=")[1]:'/';
             <h1>Sign In</h1>
           </li>
           <li>
-            {loading && <div>LOading....</div>}
-            {error && <div>{error}</div>}
+            {loading && <div className="error">LOading....</div>}
+            {error && <div className="error">Invalid Credentials</div>}
           </li>
           <li>
             <label htmlFor="email">Email</label>
             <input
+              required
               type="email"
               name="email"
               id="email"
@@ -45,6 +46,7 @@ const redirect =props.location.search?props.location.search.split("=")[1]:'/';
           <li>
             <label htmlFor="password"> Password</label>
             <input
+              required
               type="password"
               id="password"
               name="password"
