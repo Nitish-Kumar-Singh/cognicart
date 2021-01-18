@@ -10,4 +10,8 @@ const connectDB = async () => {
   });
   console.log("Db Connected");
 };
+
+function close() {
+  return mongoose.disconnect();
+}
 module.exports = connectDB;
